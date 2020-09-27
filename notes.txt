@@ -1,0 +1,110 @@
+20200730
+461 MEETING NOTES
+
+Get example data from Carlos to play around with plotting and analysis
+
+Jupyter Notebook
+- Add code to verify that all checkpoints have been completed
+- Make to do list more flexible for different machine types
+   1) Input machine name, output correct to do list
+      (Don't include ATXG at first since process is different)
+      Lower priority: make ATXG to do list
+- Working with files from Studio 2 in notebook
+  1) save files with default name so as to read in files correctly
+- Take away Pro/Manual Control in steps since it will always be Pro Control
+- Folder specific to each sample
+  - Within folder, have data files (that do not have to be named "sample
+  specifically") with standard names
+  - Then you can produce data
+  - 461 folder on X-ray Lab Server, each student has a folder, and then each
+  student has a sub folder with particular sample
+  	  - Students can adjust default names to sample specific name
+- Have students save files as *.ras instead of *.rasx so that data can be read
+in from all SmartLab types (put a note to instruct students to save files
+in this manner)
+- Add in gereral instructions in "Getting Started in Smartlab" to avoid
+repetition of instructions
+- Add in general description of what the Jupyter Notebook will do
+  - Gathers XRR data from thin film sample
+  - Add in diagram of SmartLab geometry and optics (with labels) (GENERAL
+  SCHEMATIC, BLOCK DIAGRAM) (include all controllable angles, elements,
+  and paramters)
+- Add in a note about pre-alignment and optics alignment (will be done before
+labs), have them verify all pieces are there
+       - perform 2\theta scan and make sure they are zero before sample is
+       placed
+- Add in Discussion Questions throughout lab
+- Simulation of data in Mathematica as well
+- Uncertainty in data points
+
+
+
+
+
+THINGS TO FIX
+- to do list step format
+- greek letters (have to make sure I am using the correct letters in the different steps)
+- add in some basic XRR theory and explanation
+- fix analysis code
+- list parameters in equation saying what they mean
+- add in discussion questions throughout the lab
+- get XRR diagram from bedzyk's class notes
+  - adjust two interface drawing in XRR description
+  - other diagrams for geometry of Smartlab are also in this ppt
+- bedzyk will send you text notes for any changes to the language used in
+descriptions
+- studio II is the only Smartlab with Pro Control
+- students will download python (and jupyter) onto their computers
+  - create a jupyter notebook explaining how to do this (add to syllabus)
+- get picture and diagram for geometry of Smartlab (axes are slightly different,
+use \omega not \Omega)
+- label figures with numbers and descriptions
+- CLEAR DIAGRAM SHOW ALL ANGLES AND X,Y,Z
+- add in a "group member name" variable
+- add in erf fit for the z scan (approximating the beam size and fitting the
+z-scan for more accurate value) (3 parameters, peak intensity, bkgr and full
+width half max (2.35 \times sigma))
+       - approximating beam as a step function with convolution of Gaussian
+       - if the STB fit value looks way off, maybe issues with R_y or R_x
+       alignment (rule of thumb: beam width is 25% to 75%), also might be an
+       issue with divergence of the beam
+       - 1st: approximate with rule of thumb, 2nd do fit
+- add in beam_size in important paramters (and maybe other slit sizes)
+- add in example XRR scan in "3. Performing XRR" after checklist
+- add in step in all cehcklist to transfer data to personal computer
+- in Data Analysis: add in a inspection section (find q_c, look at oscillations
+(approximate period), approximate slope)
+- Add in more comments/clues about why data may look off in reflectivity just
+like for z scan
+
+
+
+
+
+
+
+#############################################################################
+20200923
+
+XRR Jerry Notes:
+
+Differences between Gen 1 and Gen 2 (MANUAL CONTROL CHANGES)
+
+- Circle and label software screenshots so students know what's what
+- HW (hardware status, bottom left in Guidance)
+- (top left window) General Measurment -> General Measurement PB
+- Options -> Optics Management
+- Control -> Manual control instead of Pro Control
+    - In manual control, should be checked off for measurement (meas.)
+- Use theta/2theta instead of 2theta/omega (R_y still the same, R_y instead of omega, omega scans can cause issues)
+- Slit selection is the same
+- Scan mode [Continuous]
+- For guidance speed will show deg/min for units, but that is just a template and it should be 2 mm/min
+- In bottom left, there is a cursor feature that lets the move button automatically read out position (use this instead of Send Position in Studio II)
+- Move to peak still checked off for R_y scans (but manually fix if necessary)
+- Click Save Icon to save data
+    - Right click -> Save data -> [browse for correct folder] (ras format)
+    - Better method (Click General Measurment -> Select Scan -> Export -> [browse for correct folder])
+- The "located peak" will be shown with a red X or point (it might be slightly off and you can manually adjust if necessary)
+- The alignment of R_y and R_x repeatedly is to make sure we are along the crystal rod (youll notice the peak shift around in R_y)
+- beams starts off with 500um but is cut to 50um based on shadowing of the beam
