@@ -1,0 +1,161 @@
+﻿<CustomSequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="318,879" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces" xmlns="clr-namespace:Rigaku.ICActivities.Common.BaseActivities;assembly=Rigaku.ICActivities.Common.v1.0" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.rigaku.com/slsii/plugins/icplugin/icactivities.common" xmlns:p1="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ris="clr-namespace:Rigaku.ICPartsActivities.SmartLab;assembly=Rigaku.ICPartsActivities.SmartLab.v1.0" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ris:SampleAlignmentInPlaneActivity gdReceivingSlit2="{x:Null}" DisplayName="Sample Alignment (In-Plane)" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" ParamGUID="320d173b-e680-4955-9d87-3c023509e3c5" Skip="False" gbCustomizeConditions="True" gbDirectBeamAlignment="True" gbManualExchangeSlitConditions="True" gbMoveToHomePosition="True" gbPutSample="True" gbRenewOmegaOffset="True" gbScanExecOmega2="True" gbScanExecRxRy2="True" gbScanExecZ2="False" gbSurfaceNormalAlignment="True" gbUseCurrentOmegaOffset="False" gdIncidentSlit="0.05" gdReceivingSlit1="0.05" gdSampleHeight="10" gdSampleThickness="1" gdSampleWidth="3" gdScan2thetaAngle2="0.5" gdScanDeltaOmega1="1" gdScanDeltaOmega2="0.15" gdScanDeltaZ1="0.5" gdScanDeltaZ2="0.3" gdScanIntensityThreshold1="5000" gdScanIntensityThreshold2="3000" gdScanSpeedOmega1="11" gdScanSpeedOmega2="1" gdScanSpeedRxRy2="3.9996" gdScanSpeedZ1="10" gdScanSpeedZ2="2" gdScanStartOmega1="-3.1" gdScanStartOmega2="-0.3" gdScanStartRxRy2="-0.9999" gdScanStartZ1="-2" gdScanStartZ2="-0.3" gdScanStepOmega1="0.014" gdScanStepOmega2="0.002" gdScanStepRxRy2="0.004" gdScanStepZ1="0.01" gdScanStepZ2="0.01" gdScanStopOmega1="3.1" gdScanStopOmega2="0.3" gdScanStopRxRy2="0.9999" gdScanStopZ1="0" gdScanStopZ2="0.3" giScanRepeat2="-1" gsAlignmentCriteria="Standard" gsAttachment="RxRy" gsLengthLimitingSlit="5mm" gsReceivingSlit2="20.000" gsSamplePlate="ForWafer" gsScanAttenuator1="Appropriate" gsScanAttenuator2="Appropriate" gsSurfaceDensity="Medium">
+    <ris:SampleAlignmentInPlaneActivity.gsSampleSpacer>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:SampleAlignmentInPlaneActivity.gsSampleSpacer>
+  </ris:SampleAlignmentInPlaneActivity>
+  <p:MoveActivity AxisName="Phi" DisplayName="Move" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" Input="0.000" MoveMode="PosInput" MoveStep="1.000" MoveTo="0.000" ParamGUID="3cb448ed-e723-4bcd-b291-2383630e2bbb" PosRelative="False" Skip="False">
+    <p:MoveActivity.Select>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </p:MoveActivity.Select>
+  </p:MoveActivity>
+  <ris:RockingCurveMeasurementActivity gdReceivingSlit2="{x:Null}" DisplayName="Rocking Curve Measurement" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" ParamGUID="a79a8b5b-3202-486b-8e05-b936f842273b" Skip="False" gbCustomizeConditions="True" gbSaveMeasurementData="False" gbSlitConditions="True" gbSpecify2ThetaPosition="False" gdIncidentSlit="0.2" gdReceivingSlit1="0.4" gdScanSpeed="2" gdScanStart="-1" gdScanStep="0.002" gdScanStop="1" gdSpecify2ThetaPosition="69.128" giScanAxis="0" gsIncidentSollerSlit="Soller_slit_open_s" gsLengthLimitingSlit="5mm" gsMemo="phi 0" gsRange="Normal" gsReceivingOptics="Slit" gsReceivingSlit2="0.400" gsReceivingSollerSlit="Soller_slit_5.0deg" gsScanAttenuator="Auto" gsScanMode="Continuous" gsScanRange="Relative">
+    <ris:RockingCurveMeasurementActivity.gsFileName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsFileName>
+    <ris:RockingCurveMeasurementActivity.gsSampleName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsSampleName>
+  </ris:RockingCurveMeasurementActivity>
+  <p:MoveActivity AxisName="Phi" DisplayName="Move" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" Input="45.000" MoveMode="PosInput" MoveStep="1.000" MoveTo="45.000" ParamGUID="3cb448ed-e723-4bcd-b291-2383630e2bbb" PosRelative="False" Skip="False">
+    <p:MoveActivity.Select>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </p:MoveActivity.Select>
+  </p:MoveActivity>
+  <ris:RockingCurveMeasurementActivity gdReceivingSlit2="{x:Null}" DisplayName="Rocking Curve Measurement" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" ParamGUID="a79a8b5b-3202-486b-8e05-b936f842273b" Skip="False" gbCustomizeConditions="True" gbSaveMeasurementData="False" gbSlitConditions="True" gbSpecify2ThetaPosition="False" gdIncidentSlit="0.2" gdReceivingSlit1="0.4" gdScanSpeed="2" gdScanStart="-1" gdScanStep="0.002" gdScanStop="1" gdSpecify2ThetaPosition="69.128" giScanAxis="0" gsIncidentSollerSlit="Soller_slit_open_s" gsLengthLimitingSlit="5mm" gsMemo="phi 0" gsRange="Normal" gsReceivingOptics="Slit" gsReceivingSlit2="0.400" gsReceivingSollerSlit="Soller_slit_5.0deg" gsScanAttenuator="Auto" gsScanMode="Continuous" gsScanRange="Relative">
+    <ris:RockingCurveMeasurementActivity.gsFileName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsFileName>
+    <ris:RockingCurveMeasurementActivity.gsSampleName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsSampleName>
+  </ris:RockingCurveMeasurementActivity>
+  <p:MoveActivity AxisName="Phi" DisplayName="Move" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" Input="90.000" MoveMode="PosInput" MoveStep="1.000" MoveTo="90.000" ParamGUID="3cb448ed-e723-4bcd-b291-2383630e2bbb" PosRelative="False" Skip="False">
+    <p:MoveActivity.Select>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </p:MoveActivity.Select>
+  </p:MoveActivity>
+  <ris:RockingCurveMeasurementActivity gdReceivingSlit2="{x:Null}" DisplayName="Rocking Curve Measurement" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" ParamGUID="a79a8b5b-3202-486b-8e05-b936f842273b" Skip="False" gbCustomizeConditions="True" gbSaveMeasurementData="False" gbSlitConditions="True" gbSpecify2ThetaPosition="False" gdIncidentSlit="0.5" gdReceivingSlit1="1" gdScanSpeed="2" gdScanStart="-1" gdScanStep="0.002" gdScanStop="1" gdSpecify2ThetaPosition="69.128" giScanAxis="0" gsIncidentSollerSlit="Soller_slit_open_s" gsLengthLimitingSlit="5mm" gsMemo="phi 0" gsRange="Normal" gsReceivingOptics="Slit" gsReceivingSlit2="1.000" gsReceivingSollerSlit="Soller_slit_5.0deg" gsScanAttenuator="Auto" gsScanMode="Continuous" gsScanRange="Relative">
+    <ris:RockingCurveMeasurementActivity.gsFileName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsFileName>
+    <ris:RockingCurveMeasurementActivity.gsSampleName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsSampleName>
+  </ris:RockingCurveMeasurementActivity>
+  <p:MoveActivity AxisName="Phi" DisplayName="Move" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" Input="135.000" MoveMode="PosInput" MoveStep="1.000" MoveTo="135.000" ParamGUID="3cb448ed-e723-4bcd-b291-2383630e2bbb" PosRelative="False" Skip="False">
+    <p:MoveActivity.Select>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </p:MoveActivity.Select>
+  </p:MoveActivity>
+  <ris:RockingCurveMeasurementActivity gdReceivingSlit2="{x:Null}" DisplayName="Rocking Curve Measurement" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" ParamGUID="a79a8b5b-3202-486b-8e05-b936f842273b" Skip="False" gbCustomizeConditions="True" gbSaveMeasurementData="False" gbSlitConditions="True" gbSpecify2ThetaPosition="False" gdIncidentSlit="0.2" gdReceivingSlit1="0.4" gdScanSpeed="2" gdScanStart="-1" gdScanStep="0.002" gdScanStop="1" gdSpecify2ThetaPosition="69.128" giScanAxis="0" gsIncidentSollerSlit="Soller_slit_open_s" gsLengthLimitingSlit="5mm" gsMemo="phi 0" gsRange="Normal" gsReceivingOptics="Slit" gsReceivingSlit2="0.400" gsReceivingSollerSlit="Soller_slit_5.0deg" gsScanAttenuator="Auto" gsScanMode="Continuous" gsScanRange="Relative">
+    <ris:RockingCurveMeasurementActivity.gsFileName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsFileName>
+    <ris:RockingCurveMeasurementActivity.gsSampleName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsSampleName>
+  </ris:RockingCurveMeasurementActivity>
+  <p:MoveActivity AxisName="Phi" DisplayName="Move" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" Input="180.000" MoveMode="PosInput" MoveStep="1.000" MoveTo="180.000" ParamGUID="3cb448ed-e723-4bcd-b291-2383630e2bbb" PosRelative="False" Skip="False">
+    <p:MoveActivity.Select>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </p:MoveActivity.Select>
+  </p:MoveActivity>
+  <ris:RockingCurveMeasurementActivity gdReceivingSlit2="{x:Null}" DisplayName="Rocking Curve Measurement" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" ParamGUID="a79a8b5b-3202-486b-8e05-b936f842273b" Skip="False" gbCustomizeConditions="True" gbSaveMeasurementData="False" gbSlitConditions="True" gbSpecify2ThetaPosition="False" gdIncidentSlit="0.2" gdReceivingSlit1="0.4" gdScanSpeed="2" gdScanStart="-1" gdScanStep="0.002" gdScanStop="1" gdSpecify2ThetaPosition="69.128" giScanAxis="0" gsIncidentSollerSlit="Soller_slit_open_s" gsLengthLimitingSlit="5mm" gsMemo="phi 0" gsRange="Normal" gsReceivingOptics="Slit" gsReceivingSlit2="0.400" gsReceivingSollerSlit="Soller_slit_5.0deg" gsScanAttenuator="Auto" gsScanMode="Continuous" gsScanRange="Relative">
+    <ris:RockingCurveMeasurementActivity.gsFileName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsFileName>
+    <ris:RockingCurveMeasurementActivity.gsSampleName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsSampleName>
+  </ris:RockingCurveMeasurementActivity>
+  <p:MoveActivity AxisName="Phi" DisplayName="Move" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" Input="225.000" MoveMode="PosInput" MoveStep="1.000" MoveTo="225.000" ParamGUID="3cb448ed-e723-4bcd-b291-2383630e2bbb" PosRelative="False" Skip="False">
+    <p:MoveActivity.Select>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </p:MoveActivity.Select>
+  </p:MoveActivity>
+  <ris:RockingCurveMeasurementActivity gdReceivingSlit2="{x:Null}" DisplayName="Rocking Curve Measurement" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" ParamGUID="a79a8b5b-3202-486b-8e05-b936f842273b" Skip="False" gbCustomizeConditions="True" gbSaveMeasurementData="False" gbSlitConditions="True" gbSpecify2ThetaPosition="False" gdIncidentSlit="0.2" gdReceivingSlit1="0.4" gdScanSpeed="2" gdScanStart="-1" gdScanStep="0.002" gdScanStop="1" gdSpecify2ThetaPosition="69.128" giScanAxis="0" gsIncidentSollerSlit="Soller_slit_open_s" gsLengthLimitingSlit="5mm" gsMemo="phi 0" gsRange="Normal" gsReceivingOptics="Slit" gsReceivingSlit2="0.400" gsReceivingSollerSlit="Soller_slit_5.0deg" gsScanAttenuator="Auto" gsScanMode="Continuous" gsScanRange="Relative">
+    <ris:RockingCurveMeasurementActivity.gsFileName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsFileName>
+    <ris:RockingCurveMeasurementActivity.gsSampleName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsSampleName>
+  </ris:RockingCurveMeasurementActivity>
+  <p:MoveActivity AxisName="Phi" DisplayName="Move" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" Input="270.000" MoveMode="PosInput" MoveStep="1.000" MoveTo="270.000" ParamGUID="3cb448ed-e723-4bcd-b291-2383630e2bbb" PosRelative="False" Skip="False">
+    <p:MoveActivity.Select>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </p:MoveActivity.Select>
+  </p:MoveActivity>
+  <ris:RockingCurveMeasurementActivity gdReceivingSlit2="{x:Null}" DisplayName="Rocking Curve Measurement" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" ParamGUID="a79a8b5b-3202-486b-8e05-b936f842273b" Skip="False" gbCustomizeConditions="True" gbSaveMeasurementData="False" gbSlitConditions="True" gbSpecify2ThetaPosition="False" gdIncidentSlit="0.2" gdReceivingSlit1="0.4" gdScanSpeed="2" gdScanStart="-1" gdScanStep="0.002" gdScanStop="1" gdSpecify2ThetaPosition="69.128" giScanAxis="0" gsIncidentSollerSlit="Soller_slit_open_s" gsLengthLimitingSlit="5mm" gsMemo="phi 0" gsRange="Normal" gsReceivingOptics="Slit" gsReceivingSlit2="0.400" gsReceivingSollerSlit="Soller_slit_5.0deg" gsScanAttenuator="Auto" gsScanMode="Continuous" gsScanRange="Relative">
+    <ris:RockingCurveMeasurementActivity.gsFileName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsFileName>
+    <ris:RockingCurveMeasurementActivity.gsSampleName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsSampleName>
+  </ris:RockingCurveMeasurementActivity>
+  <p:MoveActivity AxisName="Phi" DisplayName="Move" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" Input="315.000" MoveMode="PosInput" MoveStep="1.000" MoveTo="315.000" ParamGUID="3cb448ed-e723-4bcd-b291-2383630e2bbb" PosRelative="False" Skip="False">
+    <p:MoveActivity.Select>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </p:MoveActivity.Select>
+  </p:MoveActivity>
+  <ris:RockingCurveMeasurementActivity gdReceivingSlit2="{x:Null}" DisplayName="Rocking Curve Measurement" ErrorState="False" sap:VirtualizedContainerService.HintSize="310,29" ParamGUID="a79a8b5b-3202-486b-8e05-b936f842273b" Skip="False" gbCustomizeConditions="True" gbSaveMeasurementData="False" gbSlitConditions="True" gbSpecify2ThetaPosition="False" gdIncidentSlit="0.2" gdReceivingSlit1="0.4" gdScanSpeed="2" gdScanStart="-1" gdScanStep="0.002" gdScanStop="1" gdSpecify2ThetaPosition="69.128" giScanAxis="0" gsIncidentSollerSlit="Soller_slit_open_s" gsLengthLimitingSlit="5mm" gsMemo="phi 0" gsRange="Normal" gsReceivingOptics="Slit" gsReceivingSlit2="0.400" gsReceivingSollerSlit="Soller_slit_5.0deg" gsScanAttenuator="Auto" gsScanMode="Continuous" gsScanRange="Relative">
+    <ris:RockingCurveMeasurementActivity.gsFileName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsFileName>
+    <ris:RockingCurveMeasurementActivity.gsSampleName>
+      <p1:InArgument x:TypeArguments="x:String">
+        <p1:Literal x:TypeArguments="x:String" Value="" />
+      </p1:InArgument>
+    </ris:RockingCurveMeasurementActivity.gsSampleName>
+  </ris:RockingCurveMeasurementActivity>
+</CustomSequence>
